@@ -1,0 +1,8 @@
+{
+  "name": "pixelpop",
+  "template": "Default",
+  "isConfigured": {
+    "client": true,
+    "server": true
+  }
+}

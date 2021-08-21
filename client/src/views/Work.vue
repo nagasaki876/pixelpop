@@ -1,6 +1,6 @@
 <template>
   <v-app>
-      <app-bar/>
+    <app-bar />
     <!-- Works -->
     <v-container class="pt-5">
       <v-row wrap>
@@ -13,13 +13,15 @@
         </v-col>
       </v-row>
     </v-container>
+    <pixel-footer />
   </v-app>
 </template>
 
 <script>
-import AppBar from '../components/AppBar.vue';
+import AppBar from "../components/AppBar.vue";
+import PixelFooter from "../components/PixelFooter.vue";
 export default {
-  components: { AppBar },
+  components: { AppBar, PixelFooter },
   data() {
     return {
       works: [

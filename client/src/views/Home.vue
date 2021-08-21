@@ -3,7 +3,7 @@
     <!-- Landing -->
     <v-row>
       <v-img contain :src="require('@/assets/landing.png')">
-       <app-bar />
+        <app-bar />
         <v-container fill-height>
           <v-col align="center">
             <p class="font-weight-bold" style="font-size: 180px">PixelPop</p>
@@ -31,7 +31,7 @@
       </v-row>
     </v-container>
     <!-- Services -->
-    <v-container class="pt-16">
+    <v-container class="pt-16 pb-16">
       <v-row>
         <v-col><p style="font-size: 24px">We create digital products</p></v-col>
         <v-col
@@ -72,10 +72,14 @@
           <p>- Mobile Application Development</p>
         </v-col>
       </v-row>
+      <v-row justify="center">
+        <p class="pixelblue--text ma-0 pr-2">View Services</p>
+        <v-icon color="pixelblue">trending_flat</v-icon>
+      </v-row>
     </v-container>
 
     <!-- Testimonials -->
-    <v-container fluid class="pixelred">
+    <!-- <v-container fluid class="pixelred">
       <v-container>
         <v-row>
           <v-col>
@@ -84,54 +88,23 @@
           <v-col> </v-col>
         </v-row>
       </v-container>
-    </v-container>
+    </v-container> -->
     <!-- Work With Us-->
     <v-container>
       <v-row>
         <v-col></v-col>
       </v-row>
     </v-container>
-    <!-- Footer -->
-    <v-container>
-      <v-row>
-        <v-col
-          >
-             <v-img
-            style="max-width: 28px"
-            :src="require('@/assets/pixelpop.png')"
-            class="mb-2"
-            alt=""
-          ></v-img>
-          <p class="pb-4">popthatpixel@gmail.com</p>
-          <p>Legal ⓒ 2021</p></v-col
-        >
-        <v-col
-          ><p>Who we are</p>
-          <p>About</p>
-          <p>Careers</p>
-          <p>Contact</p>
-        </v-col>
-        <v-col
-          ><p>Things we do</p>
-          <p>Showcase</p>
-          <p>Services</p>
-          <p>Handbook</p>
-          <p>Blog</p>
-          <p>Labs</p></v-col
-        >
-        <v-col
-          ><p>Follow us</p>
-          <v-row></v-row
-        ></v-col>
-      </v-row>
-    </v-container>
+   <!-- Footer -->
+    <pixel-footer />
   </v-app>
 </template>
 
 <script>
-import AppBar from '../components/AppBar.vue';
+import AppBar from "../components/AppBar.vue";
+import PixelFooter from '../components/PixelFooter.vue';
 export default {
-  components: { AppBar },
+  components: { AppBar, PixelFooter},
   data() {
     return {
       works: [

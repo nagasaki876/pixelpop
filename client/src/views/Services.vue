@@ -47,13 +47,15 @@
         <p>- Mobile Application Development</p>
       </v-col>
     </v-row>
+    <pixel-footer />
   </v-app>
 </template>
 
 <script>
 import AppBar from "../components/AppBar.vue";
+import PixelFooter from "../components/PixelFooter.vue"
 export default {
-  components: { AppBar },
+  components: { AppBar, PixelFooter },
   data() {
     return {
       works: [

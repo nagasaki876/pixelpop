@@ -9,7 +9,7 @@
               Hello There! <br />
               How can we help you?
             </p>
-            <p>
+            <p class="mb-10">
               Want to email us instead?
               <router-link to="">
                 <span class="text-decoration-underline"

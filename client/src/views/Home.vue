@@ -1,15 +1,15 @@
 <template>
   <v-app>
     <!-- Landing -->
-    <v-row>
+    <v-row class="mb-16">
       <v-img contain :src="require('@/assets/landing.png')">
         <app-bar />
         <v-container fill-height>
           <v-col align="center">
             <p class="font-weight-bold" style="font-size: 180px">PixelPop</p>
             <p class="title font-weight-regular grey--text">
-              We are full stack designer working with businesses to create great
-              products & brands.
+              Pixelpop is a design agency focused on Product Development for
+              businesses of any size.
             </p>
             <v-btn x-large elevation="0" color="red white--text"
               >Contact Us</v-btn
@@ -19,7 +19,7 @@
       </v-img>
     </v-row>
     <!-- Works -->
-    <v-container class="pt-16">
+    <v-container class="my-16">
       <v-row wrap>
         <v-col cols="4" class="px-5" v-for="work in works" :key="work.name">
           <v-card flat>
@@ -79,48 +79,69 @@
     </v-container>
 
     <!-- Testimonials -->
-    <!-- <v-container fluid class="pixelred">
+    <v-container fluid class="pixelblue">
       <v-container>
+        <p
+          class="font-weight-medium pb-4 white--text text-center"
+          style="font-size: 24px"
+        >
+          Companies we've worked with
+        </p>
         <v-row>
           <v-col>
-            <p>What's new on Significa Blog</p>
+            <v-img
+              contain
+              height="100"
+              :src="require('@/assets/gcic_logo.png')"
+            ></v-img>
           </v-col>
-          <v-col> </v-col>
+          <v-col>
+            <v-img
+              contain
+              height="80"
+              :src="require('@/assets/kc_logo_white.png')"
+            ></v-img>
+          </v-col>
         </v-row>
       </v-container>
-    </v-container> -->
-    <!-- Work With Us-->
+    </v-container>
+
     <v-container>
       <v-row>
         <v-col></v-col>
       </v-row>
     </v-container>
-   <!-- Footer -->
+    <!-- Footer -->
     <pixel-footer />
   </v-app>
 </template>
 
 <script>
 import AppBar from "../components/AppBar.vue";
-import PixelFooter from '../components/PixelFooter.vue';
+import PixelFooter from "../components/PixelFooter.vue";
 export default {
-  components: { AppBar, PixelFooter},
+  name: "Home",
+  components: { AppBar, PixelFooter },
   data() {
     return {
       works: [
         {
           name: "Grand Connection Investments & Co. Ltd",
           skillset: "UI/UX, Branding, Consultancy, Business Analysis",
-          imgSrc: require("@/assets/gcic_landing.png"),
+          imgSrc: require("@/assets/gcic_landing.png")
         },
         {
           name: "Kingston Creative",
           skillset: "Front-End Development, UI/UX, Product Management",
-          imgSrc: require("@/assets/kingston_creative_landing.png"),
+          imgSrc: require("@/assets/kingston_creative_landing.png")
         },
-        { name: "", skillset: "" },
-      ],
+        { name: "", skillset: "" }
+      ]
     };
   },
+  metaInfo: {
+    title: "Home",
+    titleTemplate: "%s | PixelPop"
+  }
 };
 </script>

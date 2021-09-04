@@ -26,18 +26,23 @@ export default {
     return {
       works: [
         {
-          name: "Grand Connection Investments & Co. Ltd - Travel & Rewards Program",
+          name:
+            "Grand Connection Investments & Co. Ltd - Travel & Rewards Program",
           skillset: "UI/UX, Branding, Consultancy, Business Analysis",
-          imgSrc: require("@/assets/gcic_landing.png"),
+          imgSrc: require("@/assets/gcic_landing.png")
         },
         {
           name: "Kingston Creative - Empowering Creatives in the Caribbean",
           skillset: "Front-End Development, UI/UX, Product Management",
-          imgSrc: require("@/assets/kingston_creative_landing.png"),
+          imgSrc: require("@/assets/kingston_creative_landing.png")
         },
-        { name: "", skillset: "" },
-      ],
+        { name: "", skillset: "" }
+      ]
     };
   },
+  metaInfo: {
+    title: "Work",
+    titleTemplate: "%s | PixelPop"
+  }
 };
 </script>

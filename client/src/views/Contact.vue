@@ -41,5 +41,9 @@ export default {
   data() {
     return {};
   },
+  metaInfo: {
+    title: "Contact",
+    titleTemplate: "%s | PixelPop"
+  }
 };
 </script>

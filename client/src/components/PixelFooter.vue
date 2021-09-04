@@ -1,6 +1,6 @@
 <template>
   <!-- Footer -->
-  <v-container>
+  <v-container class="mt-16">
     <v-row>
       <v-col>
         <v-img
@@ -38,6 +38,6 @@
 export default {
   data() {
     return {};
-  },
+  }
 };
 </script>
